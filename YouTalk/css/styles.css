@@ -176,7 +176,7 @@
         .articles__article:nth-child(1),
         .articles__article:nth-child(2) {
             grid-column: span 3;
-            height: 500px;
+            min-height: 500px;
         }
 
         .articles__article:nth-child(3),
@@ -186,7 +186,7 @@
         .articles__article:nth-child(7),
         .articles__article:nth-child(8) {
             grid-column: span 2;
-            height: 476px;
+            min-height: 50%;
         }
 
         .articles__article {
@@ -212,11 +212,11 @@
         }
 
         .articles__body-big {
-            height: 240px;
+            min-height: 240px;
         }
 
         .articles__body-small {
-            height: 216px;
+            min-height: 216px;
         }
 
         .articles__header {
