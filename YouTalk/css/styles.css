@@ -197,6 +197,9 @@
             border-color: #DEDEDE;
             border-width: 1px;
             border-style: solid;
+            cursor: pointer;
+            font-style: normal;
+            text-decoration: none;
         }
 
         .articles__article img {
