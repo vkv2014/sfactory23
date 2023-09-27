@@ -169,7 +169,6 @@
             column-gap: 24px;
             row-gap: 23px;
             justify-content: space-between;
-            background-color: black;
         }
 
         .articles__article:nth-child(1),
