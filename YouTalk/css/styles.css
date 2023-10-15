@@ -156,7 +156,7 @@
         }
 
         .filters__icon {
-            padding: 1;
+            padding: 1px;
             max-width: 18px;
             height: 18px;
         }
@@ -209,6 +209,11 @@
 
         .articles__top {
             position: relative;
+            color: #333333;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
         }
 
         .articles__top img {
@@ -248,7 +253,7 @@
         }
 
         .articles__filter img {
-            margin-right: 10px;
+            margin-right: 4px;
         }
 
         .articles__bottom {
