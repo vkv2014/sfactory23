@@ -1,0 +1,30 @@
+/* Devices */
+@media only screen and (min-width:1025px) {
+    body {
+        background-image: url("../images/svg/linear-gradient.svg");
+        background-position: center top 401px;
+        background-repeat: repeat-x;
+    }
+}
+
+/* Devices */
+@media only screen and (max-width:1024px) {
+    /* */
+}
+
+/* Devices */
+@media only screen and (max-width:768px) {
+    .header__nav {
+        display: none;
+    }
+}
+
+/* Devices */
+@media only screen and (max-width:414px) {
+    /* */
+}
+
+/* Devices */
+@media only screen and (max-width:320px) {
+    /* */
+}
