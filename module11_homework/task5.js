@@ -1,11 +1,10 @@
 /*
-Напишите функцию, которая принимает два натуральных числа x и n и возвращает x в степени n. Иначе говоря, умножает x на себя n раз и возвращает результат.
-
+Напишите функцию, которая принимает два натуральных числа x и n и возвращает x в степени n. 
+Иначе говоря, умножает x на себя n раз и возвращает результат.
 Используйте Arrow Function синтаксис.
-
 Протестируйте функцию на любых значениях и выведите результат в консоль.
 */
-const power = (x, n) => {
+const power1 = (x, n) => {
     if (n === 0) {
         return 1;
     } else {
@@ -17,7 +16,16 @@ const power = (x, n) => {
     }
 };
 
-const x = 2; // число
-const n = 3; // степень
-const result = power(x, n);
-console.log(result);
+const power2 = (x, n) => x ** n;
+const power3 = (x, n) => {
+    Math.pow(x, n);
+}
+
+const x = 3; // число
+const n = 0; // степень
+const result1 = power1(x, n);
+const result2 = power1(x, n);
+const result3 = power1(x, n);
+console.log(result1);
+console.log(result2);
+console.log(result3);
