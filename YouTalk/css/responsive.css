@@ -5,6 +5,7 @@
         background-position: center top 401px;
         background-repeat: repeat-x;
     }
+
 }
 
 /* Devices */
@@ -17,6 +18,8 @@
     .header__nav {
         display: none !important;
     }
+
+
 }
 
 /* Devices */
