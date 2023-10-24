@@ -1,25 +1,62 @@
-/* Devices */
-@media only screen and (min-width:1025px) {
+/* Wide screen */
+@media only screen and (min-width:1200px) {
+    .header {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .header__nav {
+        padding: 0 51px;
+    }
+
+    .header__nav li {
+        margin-right: 30px;
+    }
+
     body {
         background-image: url("../images/svg/linear-gradient.svg");
         background-position: center top 401px;
         background-repeat: repeat-x;
     }
-
 }
 
-/* Devices */
-@media only screen and (max-width:1024px) {
-    /* */
+/* Large Screen */
+@media only screen and (max-width:1200px) {
+    .header {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .header__nav li {
+        margin-right: 16px;
+    }
+
+    .header__nav {
+        padding: 0 30px;
+    }
 }
 
-/* Devices */
-@media only screen and (max-width:768px) {
+/* Desktop */
+@media only screen and (min-width:1024px) {
+    .header__burger {
+        display: none;
+    }
+}
+
+/* iPad Pro 12.9" */
+@media only screen and (max-width:1023px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .header__nav {
         display: none;
     }
 
-
+    .header__psih {
+        display: none;
+    }
 }
 
 /* Devices */
