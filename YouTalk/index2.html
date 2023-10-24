@@ -1,31 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <title>My HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <title>SF tasks</title>
 </head>
 
 <body>
-
     <header class="header">
         <div><img src="images/png/logo.png" alt="Logo">
         </div>
         <nav class="header__nav">
-            <ul class="hoverable-list">
+            <ul>
                 <li>О нас</li>
                 <li>Тарифы</li>
                 <li>Для бизнеса</li>
                 <li>Психологам</li>
                 <li>Сертификат</li>
-                <li>Материалы</li>
+                <li>Материалы<img src="images/svg/arrow-down-expand.svg" alt="Expand"> </li>
                 <li>FAQ</li>
             </ul>
         </nav>
-        <div><button>Подобрать психолога</button></div>
+        <div>
+            <button class="header__psih">Подобрать психолога</button>
+            <button class="header__burger">
+                <img src="images/svg/burger.svg" alt="Menu">
+                </img>
+            </button>
+        </div>
+
     </header>
+    <main>
+        <div class="content">
+            <div class="button-more">
+                <button>Ещё</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__top__links">
+                <div class="footer__links_link">
+                    О нас
+                </div>
+                <div class="footer__links_link">
+                    Блог
+                </div>
+                <div class="footer__links_link">
+                    Тарифы
+                </div>
+                <div class="footer__links_link">
+                    Вебинары
+                </div>
+                <div class="footer__links_link">
+                    Для бизнеса
+                </div>
+                <div class="footer__links_link">
+                    Подскаст
+                </div>
+                <div class="footer__links_link">
+                    Психологам
+                </div>
+                <div class="footer__links_link">
+                    Сертификат
+                </div>
+                <div class="footer__links_link">
+                    FAQ
+                </div>
+                <div class="footer__links_link">
+                    Контакты
+                </div>
+            </div>
+            <div class="footer__top__subscribe">
+                <div class="footer__top__subscribe__title">
+                    Одно письмо в неделю со свежими новостями и акциями
+                </div>
+                <div class="footer__top__subscribe__box">
+                    <img src="images/svg/subscription-box.svg" alt="Ввод адреса подписки">
+                </div>
+                <div class="footer__top__subscribe__disclaimer">
+                    Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О
+                    персональных данных», а также с Политикой конфиденциальности
+                </div>
+            </div>
+            <div class="footer__top__member">
+                <div><img src="images/svg/member.svg" alt="Участник"></div>
+                <div class="footer__top__member__socials">
+                    <div class="footer__top__member__socials__social">
+                        <img src="images/svg/vk.svg" class="footer__top__member__socials__social__logo" alt="VK logo">
+                    </div>
+                    <div class="footer__top__member__socials__social">
+                        <img src="images/svg/telegram.svg" class="footer__top__member__socials__social__logo"
+                            alt="Telegram logo">
+                    </div>
+                    <div class="footer__top__member__socials__social">
+                        <img src="images/svg/twitter.svg" class="footer__top__member__socials__social__logo"
+                            alt="Twitter logo">
+                    </div>
+                    <div class="footer__top__member__socials__social">
+                        <img src="images/svg/dzen.svg" class="footer__top__member__socials__social__logo-dzen"
+                            alt="Dzen logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__splitter">
+        </div>
+        <div class="footer__bottom">
+            <div>©Youtalk, 2018 – 2022</div>
+            <div class="pseudo-button">Юридические документы</div>
+            <div class="pseudo-button">Способы оплаты</div>
+        </div>
+    </footer>
 </body>
 
 </html>
