@@ -3,71 +3,109 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <title>SF tasks</title>
 </head>
 
 <body>
     <header class="header">
-        <div><img src=" images/png/logo.png">
-        </div>
+        <a href="index.html"><img src="images/png/logo.png" alt="Logo"></a>
         <nav class="header__nav">
-            <ul class="hoverable-list">
+            <ul>
                 <li>О нас</li>
                 <li>Тарифы</li>
                 <li>Для бизнеса</li>
                 <li>Психологам</li>
                 <li>Сертификат</li>
-                <li>Материалы</li>
+                <li>Материалы<img src="images/svg/arrow-down-expand.svg" alt="Expand"> </li>
                 <li>FAQ</li>
             </ul>
         </nav>
-        <div><button class="header__button">Подобрать психолога</button></div>
+        <div>
+            <button class="header__psih">Подобрать психолога</button>
+            <button class="header__burger">
+                <img src="images/svg/burger.svg" alt="Menu">
+                </img>
+            </button>
+        </div>
+
     </header>
     <main>
         <div class="double-header">
-            <div class="breadscrumbs">Главная > Блог</div>
-            <div class="page-title">Блог</div>
+            <div class="breadscrumbs">Главная > Блог > Как не утонуть в тревоге и управлять своими страхами</div>
         </div>
-        <div class="articles">
+        <div class="main-container">
+            <div class="main-container__left-column">
+                <div class="page-title">Как не утонуть в тревоге и управлять своими страхами</div>
+            </div>
+            <div class="main-container__right-column">
+                <div class="main-container__downloading">
+                    <div class="main-container__downloading__picture">
+                        <img src="images/png/25.01.png" alt="Downloading">
+                    </div>
+                    <div class="main-container__downloading__text">
+                        <p>Все в порядке, сейчас мы перенаправим вас в сервис записи Qlick, через который удобно выбрать
+                            дату, время встречи и оплатить её</p>
+                    </div>
+                    <div class="main-container__downloading__button">
+                        <button href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__splitter">
+            <hr>
+        </div>
+        <div class="main__bottom">
+            <div class="main__bottom__left">Откликается проблема?</div>
+            <div class="main__bottom__right">Картинка</div>
 
-        </div>
-        <div class="button-more">
-            <button>Ещё</button>
         </div>
     </main>
     <footer class="footer">
         <div class="footer__top">
             <div class="footer__top__links">
-                <div class="footer__links_link">
+                <div class="pseudo-button">
                     О нас
                 </div>
-                <div class="footer__links_link">
+                <div>
+                </div>
+                <div class="pseudo-button">
                     Блог
                 </div>
-                <div class="footer__links_link">
+                <div class="pseudo-button">
                     Тарифы
                 </div>
-                <div class="footer__links_link">
+                <div>
+                </div>
+                <div class="pseudo-button">
                     Вебинары
                 </div>
-                <div class="footer__links_link">
+                <div class="pseudo-button">
                     Для бизнеса
                 </div>
-                <div class="footer__links_link">
+                <div>
+                </div>
+                <div class="pseudo-button">
                     Подскаст
                 </div>
-                <div class="footer__links_link">
+                <div class="pseudo-button">
                     Психологам
                 </div>
-                <div class="footer__links_link">
+                <div>
+                </div>
+                <div class="pseudo-button">
                     Сертификат
                 </div>
-                <div class="footer__links_link">
+                <div class="pseudo-button">
                     FAQ
                 </div>
-                <div class="footer__links_link">
+                <div>
+                </div>
+                <div class="pseudo-button">
                     Контакты
                 </div>
             </div>
@@ -76,7 +114,6 @@
                     Одно письмо в неделю со свежими новостями и акциями
                 </div>
                 <div class="footer__top__subscribe__box">
-                    <img src="images/svg/subscription-box.svg" alt="Ввод адреса подписки">
                 </div>
                 <div class="footer__top__subscribe__disclaimer">
                     Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О
