@@ -30,7 +30,6 @@
             flex-wrap: nowrap;
             background: var(--bg-white, #FFF);
             box-shadow: 0px -2px 0px 0px #EFF2F2 inset;
-            font-family: 'Montserrat', sans-serif;
             white-space: nowrap;
             height: 76px;
             align-items: center;
@@ -76,13 +75,10 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-
             color: #03B2A5;
             background: #E3F5F5;
-
             border-radius: 4px;
             border-style: none;
-
             cursor: pointer;
         }
 
@@ -94,7 +90,6 @@
             padding: 0 120px;
             box-sizing: border-box;
         }
-
 
         .breadscrumbs {
             color: rgba(51, 51, 51, 0.70);
@@ -337,14 +332,69 @@
             display: flex;
             flex-direction: column;
             width: 282px;
+            max-width: 282px;
+            min-width: 282px;
         }
 
         .main-container__downloading {
-            width: 282px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
             height: 512px;
             flex-shrink: 0;
             border-radius: 16px;
             background: var(--blue-b-95, #E6F0FD);
+            padding: 24px;
+        }
+
+        .main-container__downloading__top-container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            row-gap: 24px;
+            align-items: center;
+            height: 200px;
+        }
+
+        .main-container__downloading__top {
+            position: relative;
+
+            top: 2px;
+            /* left: -120px; */
+        }
+
+        .main-container__downloading__picture>img {
+            top: 22px;
+            z-index: 3;
+        }
+
+        .main-container__downloading__picture img,
+        .main-container__downloading__background {
+            position: absolute;
+            right: 20%;
+            transform: translateX(50%);
+        }
+
+        .main-container__downloading__background.first {
+            z-index: 2;
+            top: 0px;
+
+        }
+
+        .main-container__downloading__background.second {
+            z-index: 1;
+            top: 58px;
+            right: 16px;
+        }
+
+        .main-container__downloading__title p {
+            color: var(--text-primary, #333);
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
         }
 
         .main-container__downloading__text p {
