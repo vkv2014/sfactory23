@@ -15,7 +15,7 @@
         margin-right: 30px;
     }
 
-    body {
+    .body-main {
         background-image: url("../images/svg/linear-gradient.svg");
         background-position: center top 401px;
         background-repeat: repeat-x;
@@ -41,8 +41,23 @@
     }
 }
 
+
+/* */
+@media only screen and (max-width:1024px) {
+
+    .main-container__right-column {
+        max-width: 222px;
+        min-width: 222px;
+    }
+
+}
+
 /* */
 @media only screen and (max-width:1000px) {
+
+    .main-container__right-column {
+        display: none;
+    }
 
     .header__burger {
         display: block;
