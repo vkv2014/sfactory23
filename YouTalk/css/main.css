@@ -1,26 +1,26 @@
         @font-face {
-            font-family: Montserrat, sans-serif;
-            src: url('fonts/Montserrat-Regular.woff') format('woff');
+            font-family: 'Montserrat';
+            src: url('..//fonts/Montserrat-Regular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
 
         @font-face {
-            font-family: Montserrat, sans-serif;
-            src: url('fonts/Montserrat-Bold.woff') format('woff');
+            font-family: 'Montserrat';
+            src: url('..//fonts/Montserrat-Bold.woff') format('woff');
             font-weight: bold;
             font-style: normal;
         }
 
         @font-face {
-            font-family: Montserrat, sans-serif;
-            src: url('fonts/Montserrat-Italic.woff') format('woff');
+            font-family: 'Montserrat';
+            src: url('..//fonts/Montserrat-Italic.woff') format('woff');
             font-weight: normal;
             font-style: italic;
         }
 
         body {
-            font-family: Montserrat, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0 0 0 0;
         }
 
@@ -164,7 +164,6 @@
             row-gap: 23px;
             justify-content: space-between;
             min-width: 356px;
-            /* screen + padding */
         }
 
         .articles__article:nth-child(1),
@@ -232,7 +231,7 @@
             justify-content: left;
             padding: 6px 8px;
             align-items: flex-start;
-            gap: 4px;
+            gap: 8px;
         }
 
         .articles__filter {
@@ -269,6 +268,7 @@
 
         .articles__bottom>div:last-child {
             flex-grow: 1;
+
         }
 
         .articles__header>p {
@@ -321,6 +321,11 @@
             justify-content: space-between;
         }
 
+        .main-container__spacer {
+            width: 100%;
+            height: 8px;
+        }
+
         .main-container__left-column {
             display: flex;
             flex-direction: column;
@@ -331,21 +336,28 @@
         .main-container__right-column {
             display: flex;
             flex-direction: column;
-            width: 282px;
-            max-width: 282px;
-            min-width: 282px;
+            width: 270px;
+            max-width: 270px;
+            min-width: 270px;
         }
 
         .main-container__downloading {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-end;
 
             height: 512px;
             flex-shrink: 0;
             border-radius: 16px;
             background: var(--blue-b-95, #E6F0FD);
             padding: 24px;
+            color: var(--text-primary, #333);
+            text-align: center;
+
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
         }
 
         .main-container__downloading__top-container {
