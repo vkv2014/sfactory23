@@ -50,6 +50,13 @@
         min-width: 222px;
     }
 
+    .main__bottom {
+        display: none;
+    }
+
+    .main__splitter {
+        display: none;
+    }
 }
 
 /* */

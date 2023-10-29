@@ -102,6 +102,15 @@
             letter-spacing: 0.25px;
         }
 
+        .left-column__page-title {
+            font-weight: 700;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px;
+            padding-top: 54px;
+        }
+
         .page-title {
             font-weight: 700;
             font-size: 48px;
@@ -319,6 +328,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: wrap;
+
         }
 
         .main-container__spacer {
@@ -326,12 +337,87 @@
             height: 8px;
         }
 
-        .main-container__left-column {
+        .left-column {
             display: flex;
             flex-direction: column;
             width: 690px;
-            word-wrap: normal;
+            max-width: 690px;
+            word-wrap: break-word;
+            overflow: auto;
         }
+
+        .left-column * {
+            max-width: 690px;
+        }
+
+        .left-column img,
+        .left-column div,
+        .left-column ul,
+        .left-column li {
+            max-width: 100%;
+            display: block;
+            overflow: hidden;
+        }
+
+        .left-column p {
+            max-width: 100%;
+        }
+
+        .left-column__author-date {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        .left-column__author-date img {
+            display: flex;
+        }
+
+        .left-column__image1 {
+            margin-top: 24px;
+            width: 690px;
+            height: 331px;
+            background-image: url('../images/png/swimming.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            margin-top: 24px;
+        }
+
+        .left-column__image2 {
+            margin-top: 24px;
+            width: 690px;
+            height: 331px;
+            background-image: url('../images/png/men.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            margin-top: 24px;
+        }
+
+        .left-column__image3 {
+            background-image: url('../svg/pink-background-stain.svg');
+        }
+
+        .left-column__image4 {
+            background-image: url('../images/png/woman-hat.png');
+        }
+
+        .left-column__image5 {
+            background-image: url('../images/png/hands.png');
+        }
+
+
+        .left-column__image6 {
+            background-image: url('../images/png/chair.png');
+        }
+
+        .left-column__image7 {
+            background-image: url('../images/png/sunset.png');
+        }
+
 
         .main-container__right-column {
             display: flex;
