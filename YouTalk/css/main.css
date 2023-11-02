@@ -342,18 +342,15 @@
             flex-direction: column;
             width: 690px;
             max-width: 690px;
+            min-width: 690px;
             word-wrap: break-word;
             overflow: auto;
         }
 
-        .left-column * {
-            max-width: 690px;
-        }
+        .left-column * {}
 
         .left-column img,
-        .left-column div,
-        .left-column ul,
-        .left-column li {
+        .left-column div {
             max-width: 100%;
             display: block;
             overflow: hidden;
@@ -384,6 +381,76 @@
             background-size: cover;
             background-position: center center;
             margin-top: 24px;
+        }
+
+        .content-list {
+            margin-top: 24px;
+        }
+
+        .content-list__title {
+            color: var(--text-primary, #333);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        .content-list__content {
+            padding-left: 0;
+            color: #333;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+
+        }
+
+        .content-list__content>li {
+            list-style-type: none;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+            margin-bottom: 8px;
+        }
+
+        .content-list__content>li:last-child {
+            margin-top: 6px;
+        }
+
+
+        .content-list__content>li>span {
+            display: flex;
+            align-items: center;
+            background: url('../images/svg/list-bullet.svg') no-repeat left center;
+            padding-left: 32px;
+            line-height: 24px;
+        }
+
+        .content-list__content__with-no-bullet {
+            --base-indent: 16px;
+            list-style-type: none;
+
+            padding-left: 14px;
+        }
+
+        .content-list__content__with-no-bullet li {
+            background-image: none;
+            padding-left: 0;
+            margin-top: 8px;
+        }
+
+        .content-list__content__with-no-bullet>li:nth-child(1) {
+            padding-left: calc(24px + var(--base-indent));
+        }
+
+        .content-list__content__with-no-bullet>li:nth-child(2) {
+            padding-left: calc(24px + (2 * var(--base-indent)));
+            /* Увеличиваем отступ для второго элемента */
+        }
+
+        .content-list__content__with-no-bullet>li:nth-child(3) {
+            padding-left: calc(24px + (3 * var(--base-indent)));
+            /* Увеличиваем отступ для третьего элемента */
         }
 
         .left-column__image2 {
