@@ -751,7 +751,7 @@
 
         .footer__top__links {
             display: grid;
-            grid-template-columns: 111px minmax(10px, auto) 106px;
+            grid-template-columns: 120px minmax(30px, auto) 120px;
             grid-template-rows: repeat(5, 26px);
             justify-content: space-between;
             flex-direction: column;
