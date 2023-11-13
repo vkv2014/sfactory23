@@ -707,6 +707,14 @@
             padding: 0;
         }
 
+        .left-column__separator {
+            background-image: url('../images/svg/dot.svg');
+            width: 4px;
+            height: 4px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
         .main-container__right-column {
             display: flex;
             flex-direction: column;
