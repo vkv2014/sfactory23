@@ -20,6 +20,21 @@
         background-position: center top 401px;
         background-repeat: repeat-x;
     }
+
+    .body-how {
+        background-image: url("../images/svg/how-bottom-background.svg");
+        background-position: center bottom 302px;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .main__splitter {
+        background-image: url("../images/svg/hr.svg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        height: 3px;
+        margin-bottom: 72px;
+    }
 }
 
 /* Large Screen */
