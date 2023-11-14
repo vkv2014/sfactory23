@@ -28,7 +28,7 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: nowrap;
-            background: var(--bg-white, #FFF);
+            background: #FFF;
             box-shadow: 0px -2px 0px 0px #EFF2F2 inset;
             white-space: nowrap;
             height: 76px;
@@ -70,7 +70,6 @@
 
         .header button {
             padding: 14px 20px 14px 20px;
-
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
@@ -683,7 +682,6 @@
             margin-left: 24px;
             width: 333px;
             padding-top: 259px;
-            /* img 235px + gap 24px  */
             background-repeat: no-repeat;
             background-image: url('../images/png/sunset.png');
         }
@@ -700,7 +698,6 @@
             font-style: normal;
             font-weight: 400;
             line-height: 20px;
-            /* 142.857% */
             white-space: nowrap;
             flex-wrap: wrap;
             margin: 0 0 48px 0;
@@ -860,7 +857,7 @@
         .main__bottom__left {
             display: flex;
             flex-direction: column;
-            width: 15%;
+            width: 16%;
         }
 
         .main__bottom__left__title {
@@ -878,6 +875,7 @@
             font-weight: 400;
             line-height: 26px;
             margin-top: 24px;
+            white-space: nowrap;
         }
 
         .main__bottom__left__button {
@@ -901,6 +899,7 @@
             font-weight: 700;
             line-height: normal;
             margin-top: 32px;
+            white-space: nowrap;
         }
 
         .footer {
