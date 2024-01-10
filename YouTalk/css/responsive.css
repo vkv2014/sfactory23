@@ -28,12 +28,32 @@
         background-repeat: no-repeat;
     }
 
-    .main__splitter {
+    .main-splitter {
         background-image: url("../images/svg/hr.svg");
         background-size: 100% auto;
         background-repeat: no-repeat;
         height: 3px;
         margin-bottom: 72px;
+    }
+
+    .aside-item-high {
+        width: 356px;
+        min-width: 356px;
+        max-width: 356px;
+
+        height: 248px;
+        min-height: 248px;
+        max-height: 248px;
+    }
+
+    .aside-item-low {
+        width: 356px;
+        min-width: 356px;
+        max-width: 356px;
+
+        height: 356px;
+        min-height: 356px;
+        max-height: 356px;
     }
 }
 
@@ -53,6 +73,10 @@
 
     .header__nav {
         padding: 0 30px;
+    }
+
+    .main-bottom {
+        display: none;
     }
 }
 
